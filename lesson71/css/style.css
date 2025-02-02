@@ -1,0 +1,45 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 5vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+/* ====================================================== */
+
+
+.title{
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: bisque;
+    border-radius: 120px;
+    top: 50%;
+    border: 10px solid aquamarine;
+    transform: translateY(-50%);
+}
+.title::before{
+    left: -175px;
+}
+.title::after{
+    right: -175px;
+    background-color: aquamarine;
+    border-color: bisque;
+}
